@@ -35,7 +35,7 @@ def gen_lattice_circ(poly, lattice_vecs, radius=10):
                 pass
     return polys
 
-def export_lattice(lattice, fname='export.dxf', ):
+def export_lattice(lattice, fname='export.dxf'):
     doc = ezdxf.new(dxfversion='R2010', setup=True)
     msp = doc.modelspace()
     doc.layers.new(name='1', dxfattribs={'color': 1})
